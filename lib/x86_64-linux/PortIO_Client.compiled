@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\codetyphon\fpc\fpc64\bin\x86_64-win64\fpc.exe" Date="1456537764"/>
+  <Params Value=" -Tlinux -Px86_64 -MObjFPC -Scghi -CX -Cg -Os4 -XX -l -vewnhibq -FiF:\Github\PortIO_Client\lib\x86_64-linux -FlC:\codetyphon\binLibraries\x86_64-linux -FuC:\codetyphon\typhon\lcl\units\x86_64-linux\gtk2 -FuC:\codetyphon\typhon\lcl\units\x86_64-linux -FuC:\codetyphon\typhon\components\BaseEngines\lib\x86_64-linux -FuC:\codetyphon\typhon\components\BaseUtils\lib\x86_64-linux -FuC:\codetyphon\typhon\packager\units\x86_64-linux -FuF:\Github\PortIO_Client\ -FUF:\Github\PortIO_Client\lib\x86_64-linux\ -FEF:\Github\PortIO_Client\ -oF:\Github\PortIO_Client\PortIO_Client -dLCL -dadLCL -dLCLgtk2 PortIO_Client.ppr"/>
+  <Complete Value="False"/>
+</CONFIG>

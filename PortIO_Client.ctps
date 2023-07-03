@@ -3,17 +3,16 @@
   <ProjectSession>
     <PathDelim Value="\"/>
     <Version Value="12"/>
-    <BuildModes Active="Release_Linux64"/>
+    <BuildModes Active="Debug"/>
     <Units>
       <Unit>
         <Filename Value="PortIO_Client.ppr"/>
         <FRMtype Value="0"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="2"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="5"/>
-        <CursorPos Y="33"/>
+        <CursorPos X="64" Y="13"/>
         <UsageCount Value="28"/>
         <Loaded Value="True"/>
       </Unit>
@@ -137,31 +136,27 @@
         <Filename Value="C:\codetyphon\typhon\lcl\controls.pp"/>
         <FRMtype Value="0"/>
         <UnitName Value="Controls"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="1548"/>
         <CursorPos X="2" Y="1548"/>
         <UsageCount Value="12"/>
+      </Unit>
+      <Unit>
+        <Filename Value="FormNewTunnel.pas"/>
+        <FRMtype Value="200"/>
+        <ComponentName Value="FormTunnelNew"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="formtunnelnew"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <CursorPos X="19"/>
+        <UsageCount Value="20"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="27">
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="165" Column="29" TopLine="126"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="70" Column="21" TopLine="59"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="160" Column="17" TopLine="149"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="109" Column="16" TopLine="105"/>
-      </Position>
+    <JumpHistory HistoryIndex="29">
       <Position>
         <Filename Value="portio_client_main.pas"/>
         <Caret Line="30" Column="15" TopLine="15"/>
@@ -257,6 +252,29 @@
       <Position>
         <Filename Value="PortIO_Client.ppr"/>
         <Caret Line="33" TopLine="5"/>
+      </Position>
+      <Position>
+        <Filename Value="FormNewTunnel.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="FormNewTunnel.pas"/>
+        <Caret Line="19" Column="16"/>
+      </Position>
+      <Position>
+        <Filename Value="FormNewTunnel.pas"/>
+        <Caret Column="19"/>
+      </Position>
+      <Position>
+        <Filename Value="FormNewTunnel.pas"/>
+        <Caret Line="19" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="FormNewTunnel.pas"/>
+        <Caret Column="19"/>
+      </Position>
+      <Position>
+        <Filename Value="PortIO_Client.ppr"/>
+        <Caret Line="13" Column="77" TopLine="6"/>
       </Position>
     </JumpHistory>
     <RunParams>
