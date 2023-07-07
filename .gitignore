@@ -1,3 +1,8 @@
 *.exe
+*.dbg
 *.res
-lib
+*.ini
+*.7z
+
+/lib/
+
