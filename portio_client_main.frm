@@ -1,12 +1,12 @@
 object FormMain: TFormMain
   Left = 86
-  Height = 287
+  Height = 305
   Top = 86
   Width = 495
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'PortIO Main'
-  ClientHeight = 287
+  ClientHeight = 305
   ClientWidth = 495
   DesignTimePPI = 120
   OnCloseQuery = FormCloseQuery
@@ -14,15 +14,16 @@ object FormMain: TFormMain
   LCLVersion = '8.1'
   object PageControl1: TPageControl
     Left = 0
-    Height = 288
+    Height = 305
     Top = 0
     Width = 496
     ActivePage = TabSheet1
+    TabHeight = 40
     TabIndex = 0
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = '概览'
-      ClientHeight = 255
+      ClientHeight = 257
       ClientWidth = 488
       object lblUserInfo: TLabel
         Left = 8
@@ -91,7 +92,7 @@ object FormMain: TFormMain
     end
     object TabSheet2: TTabSheet
       Caption = '隧道'
-      ClientHeight = 255
+      ClientHeight = 257
       ClientWidth = 488
       object edtTunnelID: TEdit
         Left = 8

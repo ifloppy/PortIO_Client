@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ComCtrls,
-  LCLIntf, AsyncProcess, ExtCtrls, fpjson, process;
+  LCLIntf, AsyncProcess, ExtCtrls, fpjson, process, portio_client_newtunnel;
 
 type
 
@@ -132,7 +132,9 @@ end;
 
 procedure TFormMain.btnNewTunnelClick(Sender: TObject);
 begin
-  OpenURL(urlDashboard + 'tunnels/create');
+  FormNewTunnel := TFormNewTunnel.Create(self);
+  FormNewTunnel.ShowModal;
+  FormNewTunnel.Free;
 end;
 
 procedure TFormMain.btnSaveRunScriptClick(Sender: TObject);

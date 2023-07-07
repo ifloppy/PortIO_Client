@@ -33,6 +33,7 @@ begin
   HTTPClient := TFPHTTPClient.Create(nil);
   HTTPClient.AddHeader('user-agent', 'ifloppy/portio client');
   HTTPClient.AddHeader('accept', 'application/json');
+  HTTPClient.AddHeader('content-type', 'application/json');
   HTTPClient.AddHeader('authorization', 'Bearer 0');
   InitSSLInterface;
 
