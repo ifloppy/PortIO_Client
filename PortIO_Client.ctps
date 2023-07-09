@@ -3,7 +3,7 @@
   <ProjectSession>
     <PathDelim Value="\"/>
     <Version Value="12"/>
-    <BuildModes Active="Debug"/>
+    <BuildModes Active="Release_Linux64"/>
     <Units>
       <Unit>
         <Filename Value="PortIO_Client.ppr"/>
@@ -12,8 +12,8 @@
         <EditorIndex Value="2"/>
         <WindowIndex Value="0"/>
         <TopLine Value="8"/>
-        <CursorPos X="62" Y="13"/>
-        <UsageCount Value="32"/>
+        <CursorPos Y="36"/>
+        <UsageCount Value="35"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -28,7 +28,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="41"/>
         <CursorPos X="6" Y="65"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="35"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -39,7 +39,7 @@
         <WindowIndex Value="0"/>
         <TopLine Value="18"/>
         <CursorPos X="36" Y="36"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="35"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -49,11 +49,27 @@
         <ComponentName Value="FormMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
         <TopLine Value="128"/>
         <CursorPos X="3" Y="135"/>
-        <UsageCount Value="32"/>
+        <UsageCount Value="35"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="portio_client_newtunnel.pas"/>
+        <FRMtype Value="200"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormNewTunnel"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="3"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="52"/>
+        <CursorPos X="17" Y="78"/>
+        <UsageCount Value="27"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -152,22 +168,6 @@
         <WindowIndex Value="0"/>
         <CursorPos X="19"/>
         <UsageCount Value="20"/>
-        <LoadedDesigner Value="True"/>
-      </Unit>
-      <Unit>
-        <Filename Value="portio_client_newtunnel.pas"/>
-        <FRMtype Value="200"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="FormNewTunnel"/>
-        <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="3"/>
-        <WindowIndex Value="0"/>
-        <TopLine Value="52"/>
-        <CursorPos X="17" Y="78"/>
-        <UsageCount Value="24"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-json\src\fpjson.pp"/>
@@ -193,6 +193,15 @@
         <WindowIndex Value="0"/>
         <TopLine Value="110"/>
         <CursorPos X="14" Y="137"/>
+        <UsageCount Value="10"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\codetyphon\typhon\ide\typhon.pp"/>
+        <FRMtype Value="0"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="108"/>
+        <CursorPos Y="137"/>
         <UsageCount Value="10"/>
       </Unit>
     </Units>
@@ -245,19 +254,11 @@
         <Caret Line="144" Column="45" TopLine="136"/>
       </Position>
       <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="9" Column="76" TopLine="27"/>
-      </Position>
-      <Position>
         <Filename Value="portio_client_newtunnel.pas"/>
       </Position>
       <Position>
         <Filename Value="portio_client_newtunnel.pas"/>
         <Caret Line="43" Column="34" TopLine="20"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_newtunnel.pas"/>
-        <Caret Line="8" Column="97" TopLine="21"/>
       </Position>
       <Position>
         <Filename Value="portio_client_newtunnel.pas"/>
@@ -314,6 +315,14 @@
       <Position>
         <Filename Value="portio_client_newtunnel.pas"/>
         <Caret Line="76" Column="71" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="portio_client_main.pas"/>
+        <Caret Line="135" Column="3" TopLine="128"/>
+      </Position>
+      <Position>
+        <Filename Value="PortIO_Client.ppr"/>
+        <Caret Line="36" TopLine="8"/>
       </Position>
     </JumpHistory>
     <RunParams>
