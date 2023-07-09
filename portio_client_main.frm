@@ -16,15 +16,15 @@ object FormMain: TFormMain
     Height = 311
     Top = 0
     Width = 486
-    ActivePage = TabSheet2
+    ActivePage = TabSheet1
     Anchors = [akTop, akLeft, akRight, akBottom]
     TabHeight = 40
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = '概览'
-      ClientHeight = 253
-      ClientWidth = 483
+      ClientHeight = 263
+      ClientWidth = 478
       object lblUserInfo: TLabel
         Left = 8
         Height = 20
@@ -35,7 +35,7 @@ object FormMain: TFormMain
       object btnTunnels: TButton
         Left = 8
         Height = 31
-        Top = 220
+        Top = 230
         Width = 94
         Anchors = [akLeft, akBottom]
         Caption = '隧道列表'
@@ -45,7 +45,7 @@ object FormMain: TFormMain
       object btnSign: TButton
         Left = 112
         Height = 31
-        Top = 219
+        Top = 229
         Width = 94
         Anchors = [akLeft, akBottom]
         Caption = '签到'
@@ -55,7 +55,7 @@ object FormMain: TFormMain
       object btnCharge: TButton
         Left = 216
         Height = 31
-        Top = 219
+        Top = 229
         Width = 94
         Anchors = [akLeft, akBottom]
         Caption = '充值'
@@ -65,7 +65,7 @@ object FormMain: TFormMain
       object btnNewTunnel: TButton
         Left = 320
         Height = 31
-        Top = 219
+        Top = 229
         Width = 94
         Anchors = [akLeft, akBottom]
         Caption = '创建隧道'
@@ -75,7 +75,7 @@ object FormMain: TFormMain
       object ckbAutoStartWhenRunning: TCheckBox
         Left = 8
         Height = 24
-        Top = 192
+        Top = 202
         Width = 276
         Anchors = [akLeft, akBottom]
         Caption = '在本程序每次启动时自动尝试启动映射'
@@ -86,7 +86,7 @@ object FormMain: TFormMain
         Left = 8
         Height = 31
         Hint = '将运行FRPC的脚本单独保存，而不需要运行本程序，可以减少系统线程和内存资源的占用'
-        Top = 160
+        Top = 170
         Width = 94
         Anchors = [akLeft, akBottom]
         Caption = '保存到脚本'
@@ -97,7 +97,7 @@ object FormMain: TFormMain
       end
     end
     object TabSheet2: TTabSheet
-      Caption = '隧道'
+      Caption = '映射'
       ClientHeight = 263
       ClientWidth = 478
       object edtTunnelID: TEdit
@@ -168,14 +168,14 @@ object FormMain: TFormMain
     WindowTop = 0
     WindowWidth = 0
     FillAttribute = 0
-    Left = 16
-    Top = 240
+    Left = 432
+    Top = 176
   end
   object timerFRPCOutput: TTimer
     Enabled = False
     Interval = 2000
     OnTimer = timerFRPCOutputTimer
-    Left = 80
-    Top = 240
+    Left = 424
+    Top = 104
   end
 end

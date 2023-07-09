@@ -10,7 +10,8 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the CT adLCL widgetset
-  Forms, PortIO_Client_login, pioc_common, portio_client_main
+  Forms, PortIO_Client_login, pioc_common, portio_client_main,
+portio_client_listtunnel
   { you can add units after this };
 
 {$R *.res}

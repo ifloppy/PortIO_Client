@@ -59,6 +59,7 @@ begin
   TargetTunnelObject.Add('local_address', edt_localAddress.Text);
   TargetTunnelObject.Add('name', edt_tunnelName.Text);
   TargetTunnelObject.Add('protocol', cbx_protocol.Text);
+  TargetTunnelObject.Add('remote_port', StrToInt(edt_portRemote.Text));
 
   //服务器选项
   TargetTunnelObject.Add('server_id', StrToInt(serverList.Values[cbx_server.Text]));
@@ -69,6 +70,8 @@ begin
   resp:=TStringStream.Create();
   HTTPClient.HTTPMethod('POST', urlBase+'/tunnels', resp, [200,401,422,400]);
   HTTPClient.RequestBody.Free;
+  HTTPClient.RequestBody:=nil;
+
   respJson:=GetJSON(resp.DataString) as TJSONObject;
   if HTTPClient.ResponseStatusCode = 200 then begin
     ShowMessage('创建成功');

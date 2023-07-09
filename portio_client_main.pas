@@ -6,7 +6,8 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ComCtrls,
-  LCLIntf, AsyncProcess, ExtCtrls, fpjson, process, portio_client_newtunnel;
+  LCLIntf, AsyncProcess, ExtCtrls, fpjson, process, portio_client_newtunnel,
+  portio_client_listtunnel;
 
 type
 
@@ -71,7 +72,11 @@ begin
   processFRPC.Parameters.Append('frpc.ini');
 
   ckbAutoStartWhenRunning.Checked:=ConfigFile.ReadBool('tunnel', 'autoRun', false);
-  if ConfigFile.ReadBool('tunnel', 'autoRun', false) then btnSwitchClick(Self);
+  if ConfigFile.ReadBool('tunnel', 'autoRun', false) then begin
+    PageControl1.ActivePageIndex:=1;
+    btnSwitchClick(Self);
+
+  end;
 end;
 
 procedure TFormMain.timerFRPCOutputTimer(Sender: TObject);
@@ -93,7 +98,10 @@ end;
 
 procedure TFormMain.btnTunnelsClick(Sender: TObject);
 begin
-  OpenURL(urlDashboard + 'tunnels');
+  //OpenURL(urlDashboard + 'tunnels');
+  FormListTunnel:=TFormListTunnel.Create(self);
+  FormListTunnel.ShowModal;
+  FormListTunnel.Free;
 end;
 
 procedure TFormMain.ckbAutoStartWhenRunningChange(Sender: TObject);
