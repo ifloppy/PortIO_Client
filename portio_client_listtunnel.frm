@@ -69,4 +69,14 @@ object FormListTunnel: TFormListTunnel
     OnClick = btnRefreshClick
     TabOrder = 3
   end
+  object btnUseSel: TButton
+    Left = 433
+    Height = 31
+    Top = 88
+    Width = 94
+    Caption = '使用所选'
+    OnClick = btnUseSelClick
+    TabOrder = 4
+    Visible = False
+  end
 end

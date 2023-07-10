@@ -67,4 +67,6 @@ begin
   ckbAutoLogin.Checked:=ConfigFile.ReadBool('auth', 'autoLogin', false);
 end;
 
+
+
 end.

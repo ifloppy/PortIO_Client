@@ -48,7 +48,7 @@ type
   private
 
   public
-
+    procedure useTunnel(NewTunnelID: string);
   end;
 
 var
@@ -229,12 +229,25 @@ end;
 
 procedure TFormMain.frpcStop();
 begin
-  processFRPC.Terminate(0);
+  if processFRPC.Running then begin
+    processFRPC.Terminate(0);
+    WriteOutputLog('FRPC已停止，退出代码：'+IntToStr(processFRPC.ExitCode));
+  end;
+
   timerFRPCOutput.Enabled:=false;
   edtTunnelID.Enabled:=true;
   btnUseTunnel.Enabled:=true;
   btnSwitch.Caption:='启动';
-  WriteOutputLog('FRPC已停止，退出代码：'+IntToStr(processFRPC.ExitCode));
+
+end;
+
+
+procedure TFormMain.useTunnel(NewTunnelID: string);
+begin
+  frpcStop();
+  edtTunnelID.Text:=NewTunnelID;
+  btnUseTunnelClick(Self);
+  PageControl1.ActivePageIndex:=1;
 end;
 
 end.

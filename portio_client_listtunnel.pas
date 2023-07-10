@@ -16,12 +16,15 @@ type
     btnCreate: TButton;
     btnRemoveSel: TButton;
     btnRefresh: TButton;
+    btnUseSel: TButton;
     lstTunnel: TListView;
     procedure btnCreateClick(Sender: TObject);
     procedure btnRefreshClick(Sender: TObject);
     procedure btnRemoveSelClick(Sender: TObject);
+    procedure btnUseSelClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure lstTunnelClick(Sender: TObject);
+    procedure SwitchBtn(BtnVisible: Boolean);
   private
 
   public
@@ -32,6 +35,8 @@ var
   FormListTunnel: TFormListTunnel;
 
 implementation
+
+uses portio_client_main;
 
 {$R *.frm}
 
@@ -79,12 +84,13 @@ var
   resp: TStringStream;
   respJSON: TJSONObject;
 begin
+  if MessageDlg('删除隧道', '这将会删除当前选中的隧道，是否继续？', mtConfirmation, mbYesNo, 0) = mrNo then exit;
   resp := TStringStream.Create();
   HTTPClient.HTTPMethod('DELETE', urlBase+'/tunnels/'+lstTunnel.Selected.Caption, resp, [404, 200]);
   if HTTPClient.ResponseStatusCode = 200 then begin
     ShowMessage('删除成功');
     lstTunnel.Selected.Delete;
-    btnRemoveSel.Visible:=false;
+    SwitchBtn(false);
   end else begin
       respJSON:=GetJSON(resp.DataString) as TJSONObject;
       MessageDlg('删除失败:'+HTTPClient.ResponseStatusText, respJSON.Strings['message'], mtError, [mbOK], 0);
@@ -94,6 +100,12 @@ begin
   resp.Free;
 end;
 
+procedure TFormListTunnel.btnUseSelClick(Sender: TObject);
+begin
+  FormMain.useTunnel(lstTunnel.Selected.Caption);
+  Close;
+end;
+
 procedure TFormListTunnel.FormCreate(Sender: TObject);
 begin
   btnRefreshClick(self);
@@ -101,7 +113,13 @@ end;
 
 procedure TFormListTunnel.lstTunnelClick(Sender: TObject);
 begin
-  if lstTunnel.SelCount = 1 then btnRemoveSel.Visible:=true else btnRemoveSel.Visible:=false;
+  if lstTunnel.ItemIndex = -1 then SwitchBtn(false) else SwitchBtn(true);
+end;
+
+procedure TFormListTunnel.SwitchBtn(BtnVisible: Boolean);
+begin
+  btnRemoveSel.Visible:=BtnVisible;
+  btnUseSel.Visible:=BtnVisible;
 end;
 
 end.
