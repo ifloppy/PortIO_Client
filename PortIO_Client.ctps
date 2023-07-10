@@ -3,13 +3,13 @@
   <ProjectSession>
     <PathDelim Value="\"/>
     <Version Value="12"/>
-    <BuildModes Active="Debug"/>
+    <BuildModes Active="Release_Linux64"/>
     <Units>
       <Unit>
         <Filename Value="PortIO_Client.ppr"/>
         <FRMtype Value="0"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="2"/>
         <WindowIndex Value="0"/>
         <TopLine Value="9"/>
         <CursorPos X="3" Y="35"/>
@@ -24,7 +24,7 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="PortIO_Client_login"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="43"/>
         <CursorPos X="4" Y="43"/>
@@ -35,7 +35,7 @@
       <Unit>
         <Filename Value="pioc_common.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="3"/>
         <WindowIndex Value="0"/>
         <TopLine Value="28"/>
         <CursorPos Y="34"/>
@@ -49,10 +49,10 @@
         <ComponentName Value="FormMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
         <WindowIndex Value="0"/>
-        <TopLine Value="224"/>
-        <CursorPos X="26" Y="249"/>
+        <CursorPos X="47" Y="32"/>
         <UsageCount Value="42"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -64,13 +64,11 @@
         <ComponentName Value="FormNewTunnel"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="105"/>
         <CursorPos X="32" Y="118"/>
         <UsageCount Value="34"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="portio_client_listtunnel.pas"/>
@@ -79,14 +77,11 @@
         <ComponentName Value="FormListTunnel"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
+        <EditorIndex Value="-1"/>
         <WindowIndex Value="0"/>
         <TopLine Value="83"/>
         <CursorPos X="8" Y="106"/>
         <UsageCount Value="27"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="C:\codetyphon\fpcsrc\packages\fcl-web\src\base\fphttpclient.pp"/>
@@ -246,118 +241,30 @@
         <UsageCount Value="10"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="27">
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="82" Column="28" TopLine="78"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="26" Column="33" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="110" Column="12" TopLine="84"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="108" Column="38" TopLine="88"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="110" Column="42" TopLine="88"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="84" Column="123" TopLine="88"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="97" Column="30" TopLine="79"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="107" Column="30" TopLine="85"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="84" Column="107" TopLine="69"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="107" Column="25" TopLine="88"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="84" Column="101" TopLine="79"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="119" Column="32" TopLine="90"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="9" Column="67" TopLine="91"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="104" Column="35" TopLine="89"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="105" Column="25" TopLine="89"/>
-      </Position>
+    <JumpHistory HistoryIndex="5">
       <Position>
         <Filename Value="portio_client_main.pas"/>
         <Caret Line="46" Column="15" TopLine="32"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="106" Column="31" TopLine="89"/>
       </Position>
       <Position>
         <Filename Value="portio_client_main.pas"/>
         <Caret Line="37" Column="15" TopLine="23"/>
       </Position>
       <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="107" Column="11" TopLine="83"/>
+        <Filename Value="portio_client_main.pas"/>
+        <Caret Line="249" Column="26" TopLine="224"/>
       </Position>
       <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="39" Column="25" TopLine="24"/>
+        <Filename Value="portio_client_main.pas"/>
+        <Caret Line="248" Column="26" TopLine="223"/>
       </Position>
       <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="9" Column="49" TopLine="6"/>
+        <Filename Value="portio_client_main.pas"/>
+        <Caret Line="33" Column="33" TopLine="19"/>
       </Position>
       <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="103" Column="23" TopLine="28"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="105" Column="36" TopLine="90"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="106" Column="25" TopLine="91"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="105" Column="36" TopLine="90"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="104" Column="24" TopLine="89"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="103" Column="48" TopLine="84"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_listtunnel.pas"/>
-        <Caret Line="39" Column="25" TopLine="15"/>
+        <Filename Value="portio_client_main.pas"/>
+        <Caret Line="138" Column="5" TopLine="124"/>
       </Position>
     </JumpHistory>
     <RunParams>
