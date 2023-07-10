@@ -62,16 +62,6 @@ object FormMain: TFormMain
         OnClick = btnChargeClick
         TabOrder = 2
       end
-      object btnNewTunnel: TButton
-        Left = 320
-        Height = 31
-        Top = 229
-        Width = 94
-        Anchors = [akLeft, akBottom]
-        Caption = '创建隧道'
-        OnClick = btnNewTunnelClick
-        TabOrder = 3
-      end
       object ckbAutoStartWhenRunning: TCheckBox
         Left = 8
         Height = 24
@@ -80,7 +70,7 @@ object FormMain: TFormMain
         Anchors = [akLeft, akBottom]
         Caption = '在本程序每次启动时自动尝试启动映射'
         OnChange = ckbAutoStartWhenRunningChange
-        TabOrder = 4
+        TabOrder = 3
       end
       object btnSaveRunScript: TButton
         Left = 8
@@ -93,7 +83,7 @@ object FormMain: TFormMain
         OnClick = btnSaveRunScriptClick
         ParentShowHint = False
         ShowHint = True
-        TabOrder = 5
+        TabOrder = 4
       end
     end
     object TabSheet2: TTabSheet

@@ -22,7 +22,6 @@ type
     btnTunnels: TButton;
     btnSign: TButton;
     btnCharge: TButton;
-    btnNewTunnel: TButton;
     edtTunnelID: TEdit;
     lblUserInfo: TLabel;
     outputLog: TMemo;
@@ -31,7 +30,6 @@ type
     TabSheet2: TTabSheet;
     timerFRPCOutput: TTimer;
     procedure btnChargeClick(Sender: TObject);
-    procedure btnNewTunnelClick(Sender: TObject);
     procedure btnSaveRunScriptClick(Sender: TObject);
     procedure btnSwitchClick(Sender: TObject);
     procedure btnUseTunnelClick(Sender: TObject);
@@ -136,13 +134,6 @@ end;
 procedure TFormMain.btnChargeClick(Sender: TObject);
 begin
   OpenURL(urlDashboard + 'charge');
-end;
-
-procedure TFormMain.btnNewTunnelClick(Sender: TObject);
-begin
-  FormNewTunnel := TFormNewTunnel.Create(self);
-  FormNewTunnel.ShowModal;
-  FormNewTunnel.Free;
 end;
 
 procedure TFormMain.btnSaveRunScriptClick(Sender: TObject);
