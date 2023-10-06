@@ -1,0 +1,31 @@
+object FormStats: TFormStats
+  Left = 379
+  Height = 240
+  Top = 131
+  Width = 320
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = '用户统计数据'
+  ClientHeight = 240
+  ClientWidth = 320
+  DesignTimePPI = 120
+  LCLVersion = '3.99.0.0'
+  OnCreate = FormCreate
+  object btnRefreshData: TButton
+    Left = 8
+    Height = 31
+    Top = 8
+    Width = 94
+    Caption = '刷新数据'
+    TabOrder = 0
+    OnClick = btnRefreshDataClick
+  end
+  object ListBox: TListBox
+    Left = 8
+    Height = 184
+    Top = 48
+    Width = 304
+    ItemHeight = 0
+    TabOrder = 1
+  end
+end

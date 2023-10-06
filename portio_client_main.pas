@@ -7,7 +7,7 @@ interface
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ComCtrls,
   LCLIntf, AsyncProcess, ExtCtrls, fpjson, process, portio_client_newtunnel,
-  portio_client_listtunnel;
+  portio_client_listtunnel, pioc_client_stats;
 
 type
 
@@ -15,11 +15,12 @@ type
 
   TFormMain = class(TForm)
     btnSaveRunScript: TButton;
+    btnTunnels: TButton;
+    btnUserStats: TButton;
     ckbAutoStartWhenRunning: TCheckBox;
     processFRPC: TAsyncProcess;
     btnUseTunnel: TButton;
     btnSwitch: TButton;
-    btnTunnels: TButton;
     btnSign: TButton;
     btnCharge: TButton;
     edtTunnelID: TEdit;
@@ -32,6 +33,7 @@ type
     procedure btnChargeClick(Sender: TObject);
     procedure btnSaveRunScriptClick(Sender: TObject);
     procedure btnSwitchClick(Sender: TObject);
+    procedure btnUserStatsClick(Sender: TObject);
     procedure btnUseTunnelClick(Sender: TObject);
     procedure btnSignClick(Sender: TObject);
     procedure btnTunnelsClick(Sender: TObject);
@@ -43,6 +45,7 @@ type
     procedure WriteOutputLog(line: string);
     procedure frpcStart();
     procedure frpcStop();
+    procedure RefreshUserInfo();
   private
 
   public
@@ -62,7 +65,7 @@ uses pioc_common;
 
 procedure TFormMain.FormCreate(Sender: TObject);
 begin
-  lblUserInfo.Caption := '欢迎你，' + Utf8ToAnsi(UserDataJSON.Strings['name'] + LineEnding) + '剩余流量(GB):' + Utf8ToAnsi(IntToStr(UserDataJSON.Integers['traffic']) + LineEnding);
+  RefreshUserInfo();
   edtTunnelID.Caption:=ConfigFile.ReadString('tunnel', 'id', '');
   processFRPC.Executable:=Application.Location+frpcFileName;
   processFRPC.CurrentDirectory:=GetCurrentDir;
@@ -75,6 +78,11 @@ begin
     btnSwitchClick(Self);
 
   end;
+end;
+
+procedure TFormMain.RefreshUserInfo();
+begin
+  lblUserInfo.Caption := '欢迎你，' + Utf8ToAnsi(UserDataJSON.Strings['name'] + LineEnding) + '剩余流量(GB):' + Utf8ToAnsi(IntToStr(UserDataJSON.Integers['traffic']) + LineEnding);
 end;
 
 procedure TFormMain.timerFRPCOutputTimer(Sender: TObject);
@@ -164,6 +172,15 @@ begin
 
 end;
 
+procedure TFormMain.btnUserStatsClick(Sender: TObject);
+var
+  tmp: TFormStats;
+begin
+  tmp:=TFormStats.Create(Self);
+  tmp.ShowModal;
+  tmp.Free;
+end;
+
 procedure TFormMain.btnUseTunnelClick(Sender: TObject);
 var
   tunnelInfoJson: TJSONObject;
@@ -214,6 +231,7 @@ begin
   timerFRPCOutput.Enabled:=true;
   edtTunnelID.Enabled:=false;
   btnUseTunnel.Enabled:=false;
+  btnTunnels.Enabled:=false;
   btnSwitch.Caption:='停止';
   WriteOutputLog('FRPC已开始运行，进程ID：'+IntToStr(processFRPC.ProcessID));
 end;
@@ -228,6 +246,7 @@ begin
   timerFRPCOutput.Enabled:=false;
   edtTunnelID.Enabled:=true;
   btnUseTunnel.Enabled:=true;
+  btnTunnels.Enabled:=true;
   btnSwitch.Caption:='启动';
 
 end;

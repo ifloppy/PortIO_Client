@@ -16,10 +16,10 @@ object FormMain: TFormMain
     Height = 311
     Top = 0
     Width = 486
-    ActivePage = TabSheet1
+    ActivePage = TabSheet2
     Anchors = [akTop, akLeft, akRight, akBottom]
     TabHeight = 40
-    TabIndex = 0
+    TabIndex = 1
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = '概览'
@@ -33,7 +33,7 @@ object FormMain: TFormMain
         Caption = '用户信息应该展示在此'
       end
       object btnSign: TButton
-        Left = 8
+        Left = 112
         Height = 31
         Top = 229
         Width = 94
@@ -43,7 +43,7 @@ object FormMain: TFormMain
         OnClick = btnSignClick
       end
       object btnCharge: TButton
-        Left = 112
+        Left = 216
         Height = 31
         Top = 229
         Width = 94
@@ -76,7 +76,7 @@ object FormMain: TFormMain
         OnClick = btnSaveRunScriptClick
       end
       object btnUserStats: TButton
-        Left = 216
+        Left = 320
         Height = 31
         Top = 228
         Width = 94
@@ -134,7 +134,7 @@ object FormMain: TFormMain
         Width = 458
         Anchors = [akTop, akLeft, akRight, akBottom]
         Lines.Strings = (
-          '开始使用PortIO，请在网站上创建隧道，并在本程序中选择要映射的隧道，再点击“使用”。'
+          '开始使用PortIO，请在网站上创建隧道，并将这条隧道的数字ID输入到本程序中，再点击使用。'
           '想要开始映射，请点击“启动”；停止映射请点击“停止”'
           '映射服务的日志将会被输出在这里。'
         )

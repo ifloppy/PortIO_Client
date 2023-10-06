@@ -5,7 +5,7 @@ unit pioc_common;
 interface
 
 uses
-  Classes, SysUtils, fphttpclient, opensslsockets, openssl, jsonparser, fpjson, Forms, Dialogs, IniFiles;
+  Classes, SysUtils, fphttpclient, opensslsockets, openssl, jsonparser, fpjson, Forms, Dialogs, IniFiles, StrUtils, DateUtils;
 
 const
   urlDashboard = 'https://muhanfrp.cn/';

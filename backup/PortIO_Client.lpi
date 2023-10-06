@@ -177,6 +177,13 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
+      <Unit>
+        <Filename Value="pioc_client_stats.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormStats"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

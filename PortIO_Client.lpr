@@ -11,7 +11,7 @@ uses
   {$ENDIF}
   Interfaces, // this includes the CT adLCL widgetset
   Forms, PortIO_Client_login, pioc_common, portio_client_main,
-portio_client_listtunnel
+portio_client_listtunnel, pioc_client_stats
   { you can add units after this };
 
 {$R *.res}
@@ -32,7 +32,6 @@ begin
   FormLogin.Free;
 
   Application.CreateForm(TFormMain, FormMain);
-
   Application.Run;
 end.
 
