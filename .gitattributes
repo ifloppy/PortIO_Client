@@ -1,4 +1,4 @@
-*.frm linguist-language=Pascal
+*.lfm linguist-language=Pascal
 *.ctpr linguist-language=Pascal
 *.ctps linguist-language=Pascal
 *.ppr linguist-language=Pascal

@@ -32,7 +32,7 @@ var
 implementation
 
 uses pioc_common;
-{$R *.frm}
+{$R *.lfm}
 
 { TFormLogin }
 

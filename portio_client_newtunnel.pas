@@ -39,7 +39,7 @@ var
 
 implementation
 
-{$R *.frm}
+{$R *.lfm}
 
 { TFormNewTunnel }
 

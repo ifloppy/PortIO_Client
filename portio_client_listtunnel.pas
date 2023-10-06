@@ -38,7 +38,7 @@ implementation
 
 uses portio_client_main;
 
-{$R *.frm}
+{$R *.lfm}
 
 { TFormListTunnel }
 
