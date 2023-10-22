@@ -14,6 +14,7 @@ type
   { TFormMain }
 
   TFormMain = class(TForm)
+    btnCharge: TButton;
     btnSaveRunScript: TButton;
     btnTunnels: TButton;
     btnUserStats: TButton;
@@ -22,7 +23,6 @@ type
     btnUseTunnel: TButton;
     btnSwitch: TButton;
     btnSign: TButton;
-    btnCharge: TButton;
     edtTunnelID: TEdit;
     lblUserInfo: TLabel;
     outputLog: TMemo;

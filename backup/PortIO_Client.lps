@@ -11,7 +11,7 @@
         <EditorIndex Value="3"/>
         <TopLine Value="7"/>
         <CursorPos X="47" Y="34"/>
-        <UsageCount Value="43"/>
+        <UsageCount Value="44"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -24,7 +24,7 @@
         <EditorIndex Value="2"/>
         <TopLine Value="42"/>
         <CursorPos X="11" Y="49"/>
-        <UsageCount Value="43"/>
+        <UsageCount Value="44"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -32,9 +32,8 @@
         <Filename Value="pioc_common.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="4"/>
-        <TopLine Value="45"/>
         <CursorPos X="33" Y="27"/>
-        <UsageCount Value="43"/>
+        <UsageCount Value="44"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -43,12 +42,10 @@
         <ComponentName Value="FormMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="56"/>
-        <CursorPos X="21" Y="68"/>
-        <UsageCount Value="43"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="217"/>
+        <CursorPos X="3" Y="144"/>
+        <UsageCount Value="44"/>
       </Unit>
       <Unit>
         <Filename Value="portio_client_newtunnel.pas"/>
@@ -59,7 +56,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="105"/>
         <CursorPos X="32" Y="118"/>
-        <UsageCount Value="35"/>
+        <UsageCount Value="36"/>
       </Unit>
       <Unit>
         <Filename Value="portio_client_listtunnel.pas"/>
@@ -67,10 +64,12 @@
         <ComponentName Value="FormListTunnel"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="1"/>
         <TopLine Value="83"/>
         <CursorPos X="8" Y="106"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="29"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="pioc_client_stats.pas"/>
@@ -78,10 +77,10 @@
         <ComponentName Value="FormStats"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="19"/>
-        <CursorPos X="18" Y="49"/>
-        <UsageCount Value="21"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="39"/>
+        <CursorPos X="29" Y="74"/>
+        <UsageCount Value="22"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -216,59 +215,7 @@
         <UsageCount Value="10"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="46" Column="15" TopLine="32"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="37" Column="15" TopLine="23"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="249" Column="26" TopLine="224"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="248" Column="26" TopLine="223"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="33" Column="33" TopLine="19"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="138" Column="5" TopLine="124"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="32" Column="47"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_login.pas"/>
-        <Caret Line="68" TopLine="42"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_login.pas"/>
-        <Caret Line="22" Column="26" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_login.pas"/>
-        <Caret Line="68" TopLine="42"/>
-      </Position>
-      <Position>
-        <Filename Value="pioc_client_stats.pas"/>
-        <Caret Column="23"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="65" Column="163" TopLine="55"/>
-      </Position>
-      <Position>
-        <Filename Value="pioc_client_stats.pas"/>
-        <Caret Column="23"/>
-      </Position>
+    <JumpHistory HistoryIndex="15">
       <Position>
         <Filename Value="portio_client_login.pas"/>
         <Caret Line="49" Column="11" TopLine="42"/>
@@ -284,26 +231,6 @@
       <Position>
         <Filename Value="pioc_client_stats.pas"/>
         <Caret Line="19" Column="5"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="65" Column="48" TopLine="55"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="67" Column="48" TopLine="57"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="10" Column="46"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="171" Column="12" TopLine="169"/>
-      </Position>
-      <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="175" Column="11" TopLine="163"/>
       </Position>
       <Position>
         <Filename Value="pioc_client_stats.pas"/>
@@ -334,8 +261,24 @@
         <Caret Line="33" Column="50" TopLine="12"/>
       </Position>
       <Position>
-        <Filename Value="portio_client_main.pas"/>
-        <Caret Line="179" Column="15" TopLine="169"/>
+        <Filename Value="pioc_client_stats.pas"/>
+        <Caret Line="31" Column="15" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="pioc_client_stats.pas"/>
+        <Caret Line="32" Column="15" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="pioc_client_stats.pas"/>
+        <Caret Line="33" Column="15" TopLine="26"/>
+      </Position>
+      <Position>
+        <Filename Value="pioc_client_stats.pas"/>
+        <Caret Line="32" Column="15" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="pioc_client_stats.pas"/>
+        <Caret Line="39" Column="34" TopLine="17"/>
       </Position>
     </JumpHistory>
     <RunParams>

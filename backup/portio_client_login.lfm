@@ -1,7 +1,7 @@
 object FormLogin: TFormLogin
-  Left = 316
+  Left = 172
   Height = 191
-  Top = 442
+  Top = 171
   Width = 421
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsDialog
@@ -9,9 +9,9 @@ object FormLogin: TFormLogin
   ClientHeight = 191
   ClientWidth = 421
   DesignTimePPI = 120
-  LCLVersion = '3.99.0.0'
   OnActivate = FormActivate
   OnCreate = FormCreate
+  LCLVersion = '8.1'
   object inputToken: TLabeledEdit
     Left = 16
     Height = 28
@@ -31,8 +31,8 @@ object FormLogin: TFormLogin
     Width = 94
     Anchors = [akRight, akBottom]
     Caption = '登录'
-    TabOrder = 1
     OnClick = btnLoginClick
+    TabOrder = 1
   end
   object btnGetToken: TButton
     Left = 8
@@ -41,8 +41,8 @@ object FormLogin: TFormLogin
     Width = 134
     Anchors = [akLeft, akBottom]
     Caption = '获取Token'
-    TabOrder = 2
     OnClick = btnGetTokenClick
+    TabOrder = 2
   end
   object ckbAutoLogin: TCheckBox
     Left = 152

@@ -1,99 +1,98 @@
 object FormMain: TFormMain
   Left = 86
-  Height = 311
+  Height = 249
   Top = 86
-  Width = 485
+  Width = 388
   BorderIcons = [biSystemMenu, biMinimize]
   Caption = 'PortIO Main'
-  ClientHeight = 311
-  ClientWidth = 485
-  DesignTimePPI = 120
+  ClientHeight = 249
+  ClientWidth = 388
   LCLVersion = '3.99.0.0'
   OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
   object PageControl1: TPageControl
     Left = 0
-    Height = 311
+    Height = 249
     Top = 0
-    Width = 486
-    ActivePage = TabSheet2
+    Width = 389
+    ActivePage = TabSheet1
     Anchors = [akTop, akLeft, akRight, akBottom]
-    TabHeight = 40
-    TabIndex = 1
+    TabHeight = 32
+    TabIndex = 0
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = '概览'
-      ClientHeight = 263
-      ClientWidth = 478
+      ClientHeight = 209
+      ClientWidth = 381
       object lblUserInfo: TLabel
-        Left = 8
-        Height = 20
-        Top = 8
-        Width = 150
+        Left = 6
+        Height = 17
+        Top = 6
+        Width = 120
         Caption = '用户信息应该展示在此'
       end
       object btnSign: TButton
-        Left = 112
-        Height = 31
-        Top = 229
-        Width = 94
+        Left = 6
+        Height = 25
+        Top = 182
+        Width = 75
         Anchors = [akLeft, akBottom]
         Caption = '签到'
         TabOrder = 0
         OnClick = btnSignClick
       end
-      object btnCharge: TButton
-        Left = 216
-        Height = 31
-        Top = 229
-        Width = 94
-        Anchors = [akLeft, akBottom]
-        Caption = '充值'
-        TabOrder = 1
-        OnClick = btnChargeClick
-      end
       object ckbAutoStartWhenRunning: TCheckBox
-        Left = 8
-        Height = 24
-        Top = 202
-        Width = 276
+        Left = 6
+        Height = 21
+        Top = 158
+        Width = 222
         Anchors = [akLeft, akBottom]
         Caption = '在本程序每次启动时自动尝试启动映射'
-        TabOrder = 2
+        TabOrder = 1
         OnChange = ckbAutoStartWhenRunningChange
       end
       object btnSaveRunScript: TButton
-        Left = 8
-        Height = 31
+        Left = 6
+        Height = 25
         Hint = '将运行FRPC的脚本单独保存，而不需要运行本程序，可以减少系统线程和内存资源的占用'
-        Top = 170
-        Width = 94
+        Top = 134
+        Width = 75
         Anchors = [akLeft, akBottom]
         Caption = '保存到脚本'
         ParentShowHint = False
         ShowHint = True
-        TabOrder = 3
+        TabOrder = 2
         OnClick = btnSaveRunScriptClick
       end
       object btnUserStats: TButton
-        Left = 320
-        Height = 31
-        Top = 228
-        Width = 94
-        Caption = '详细信息'
-        TabOrder = 4
+        Left = 173
+        Height = 25
+        Top = 182
+        Width = 75
+        Caption = '账户详情'
+        TabOrder = 3
         OnClick = btnUserStatsClick
+      end
+      object btnCharge: TButton
+        Left = 88
+        Height = 25
+        Top = 182
+        Width = 75
+        Anchors = [akLeft, akBottom]
+        Caption = '充值'
+        TabOrder = 4
+        OnClick = btnChargeClick
       end
     end
     object TabSheet2: TTabSheet
       Caption = '映射'
-      ClientHeight = 263
-      ClientWidth = 478
+      ClientHeight = 209
+      ClientWidth = 381
       object edtTunnelID: TEdit
-        Left = 112
-        Height = 28
-        Top = 8
-        Width = 232
+        Left = 90
+        Height = 25
+        Top = 6
+        Width = 184
         Anchors = [akTop, akLeft, akRight]
         NumbersOnly = True
         TabOrder = 0
@@ -101,11 +100,11 @@ object FormMain: TFormMain
         OnChange = edtTunnelIDChange
       end
       object btnUseTunnel: TButton
-        Left = 352
-        Height = 31
+        Left = 280
+        Height = 25
         Hint = '将填写的隧道ID所对应的隧道的配置文件保存，供FRPC使用'
-        Top = 8
-        Width = 56
+        Top = 6
+        Width = 45
         Anchors = [akTop, akRight]
         Caption = '使用'
         Enabled = False
@@ -115,11 +114,11 @@ object FormMain: TFormMain
         OnClick = btnUseTunnelClick
       end
       object btnSwitch: TButton
-        Left = 411
-        Height = 31
+        Left = 328
+        Height = 25
         Hint = 'FRPC的开关'
-        Top = 8
-        Width = 54
+        Top = 6
+        Width = 43
         Anchors = [akTop, akRight]
         Caption = '启动'
         ParentShowHint = False
@@ -128,13 +127,13 @@ object FormMain: TFormMain
         OnClick = btnSwitchClick
       end
       object outputLog: TMemo
-        Left = 8
-        Height = 198
-        Top = 56
-        Width = 458
+        Left = 6
+        Height = 157
+        Top = 45
+        Width = 365
         Anchors = [akTop, akLeft, akRight, akBottom]
         Lines.Strings = (
-          '开始使用PortIO，请在网站上创建隧道，并将这条隧道的数字ID输入到本程序中，再点击使用。'
+          '开始使用PortIO，请在网站上创建隧道，并在本程序中选择要映射的隧道，再点击“使用”。'
           '想要开始映射，请点击“启动”；停止映射请点击“停止”'
           '映射服务的日志将会被输出在这里。'
         )
@@ -143,10 +142,10 @@ object FormMain: TFormMain
         TabOrder = 3
       end
       object btnTunnels: TButton
-        Left = 8
-        Height = 31
-        Top = 8
-        Width = 94
+        Left = 6
+        Height = 25
+        Top = 5
+        Width = 75
         Anchors = [akLeft, akBottom]
         Caption = '隧道列表'
         TabOrder = 4
@@ -167,14 +166,14 @@ object FormMain: TFormMain
     WindowTop = 0
     WindowWidth = 0
     FillAttribute = 0
-    Left = 432
-    Top = 176
+    Left = 346
+    Top = 141
   end
   object timerFRPCOutput: TTimer
     Enabled = False
     Interval = 2000
     OnTimer = timerFRPCOutputTimer
-    Left = 424
-    Top = 104
+    Left = 339
+    Top = 83
   end
 end
